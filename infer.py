@@ -36,7 +36,7 @@ if __name__ == "__main__":
     #-------------------------Load model-------------------------
     parser = argparse.ArgumentParser(description="ReID Baseline Training")
     parser.add_argument(
-        "--config_file", default="/Users/JCPHF7G4NK/Documents/projects/thesis/PGDS/configs/market/swin_tiny.yml", help="path to config file", type=str
+        "--config_file", default="/PGDS/configs/market/swin_tiny.yml", help="path to config file", type=str
     )
     parser.add_argument("opts", help="Modify config options using the command-line", default=None,
                         nargs=argparse.REMAINDER)
@@ -80,7 +80,7 @@ if __name__ == "__main__":
     
     #------------------------Generate test embedding vector--------------------------------
     # embedded_vectors = []
-    # imgs = list_file_in_folder("/Users/JCPHF7G4NK/Documents/projects/thesis/PGDS/DukeMTMC-reID/test", "jpg")
+    # imgs = list_file_in_folder("/DukeMTMC-reID/test", "jpg")
     # for imagePath in imgs:
     #     img = Image.open(imagePath).convert('RGB')
     #     # img = img.resize((w, h))
@@ -92,7 +92,7 @@ if __name__ == "__main__":
     #         out = model(input_tensor)
     #     embedded_vectors.append(out[0])
     #     # print(out[0].shape)
-    # np.save("/Users/JCPHF7G4NK/Documents/projects/thesis/PGDS/DukeMTMC-reID/testOutput.npy", embedded_vectors)
+    # np.save("/DukeMTMC-reID/testOutput.npy", embedded_vectors)
     #------------------------Generate test embedding vector--------------------------------
 
     #------------------------Connect milvus--------------------------------

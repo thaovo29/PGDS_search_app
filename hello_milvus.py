@@ -74,9 +74,9 @@ pgds = Collection("pgds", schema, consistency_level="Strong")
 # - or the existing primary key field from the entities if auto_id=False in the schema.
 
 print(fmt.format("Start inserting entities"))
-embedding_vectors = np.load("/Users/JCPHF7G4NK/Documents/projects/thesis/PGDS/DukeMTMC-reID/embeddedVector.npy")
+embedding_vectors = np.load("/DukeMTMC-reID/embeddedVector.npy")
 n_vector = len(embedding_vectors)
-files = list_file_in_folder("/Users/JCPHF7G4NK/Documents/projects/thesis/PGDS/DukeMTMC-reID/bounding_box_test", "jpg")
+files = list_file_in_folder("/DukeMTMC-reID/bounding_box_test", "jpg")
 entities = []
 for i in range(n_vector):
     entities.append({
